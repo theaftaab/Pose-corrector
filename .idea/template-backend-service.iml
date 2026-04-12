@@ -5,15 +5,9 @@
       <sourceFolder url="file://$MODULE_DIR$/SharedBackend/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/app" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/.venv" />
     </content>
-    <orderEntry type="jdk" jdkName="wealthhub" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.12 (Pose-corrector)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-  </component>
-  <component name="PyNamespacePackagesService">
-    <option name="namespacePackageFolders">
-      <list>
-        <option value="$MODULE_DIR$/migrations" />
-      </list>
-    </option>
   </component>
 </module>
