@@ -135,6 +135,10 @@ def shoulder_tilt(kp: np.ndarray) -> MetricResult | None:
     l = _xy(kp, KP_LEFT_SHOULDER)
     r = _xy(kp, KP_RIGHT_SHOULDER)
     angle = angle_from_horizontal(l, r)
+    # COCO "left" shoulder is on the right side of the image for a front-facing
+    # person, so the raw angle is often ~180° instead of ~0°. Fold it back.
+    if abs(angle) > 90:
+        angle = 180 - abs(angle)
     return MetricResult(
         region="shoulder_tilt",
         value=round(angle, 1),
